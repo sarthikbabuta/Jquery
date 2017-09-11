@@ -1,0 +1,36 @@
+<html>
+<head>
+<title> </title>
+<script src="j.js">
+</script>
+<script>
+$(document).ready(function()
+{
+$("#one").click(function()
+{
+$("#two").slideDown("slow");
+$("#two").slideUp(2000);
+});
+});
+</script>
+<style>
+#one
+{
+background-color:yellow;
+color:red;
+padding:50px;
+text-align:center;
+}
+#two
+{
+background-color:red;
+padding:50px;
+display:none;
+}
+</style>
+</head>
+<body>
+<div id="one"><h1 style="padding-left:20px">Jquery</h1></div>
+<div id="two"><h1 style="padding-left:500px"><img src="download1.jpg"></h1></div>
+</body>
+</html>

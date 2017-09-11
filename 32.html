@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+		$("#hide").click(function(){
+        $("p").hide(5000);
+		});
+		$("#show").click(function(){
+        $("p").show(2000);
+		});
+		$("button").click(function(){
+        $("h3").toggle();
+    });
+	$("button").click(function(){
+        $("#div1").fadeIn("2000");
+    });
+	$("button").click(function(){
+        $("#div2").fadeOut("2000");
+    });
+	$("button").click(function(){
+        $("#div3").fadeToggle("3000");
+    });
+	$("button").click(function(){
+        $("#div4").fadeTo("slow",0.6);
+    });
+	
+		});
+		</script>
+	</head>
+	<body>
+		<button id="hide">Hide</button>
+		<button id="show">Show</button>
+		<button id="toggle">Toggle</button>
+		<button>Click to fade in boxes</button>
+		<button>Click to fade out boxes</button>
+		<button>Click to fade in/out boxes</button>
+		<button>Click to fade  boxes</button>
+		<p> Click on the paragraph</p>
+		<h3> This is another small paragraph</h3>
+		<div id="div1"style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+		<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+		<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+		<div id="div4" style="width:80px;height:80px;background-color:yellow;"></div>
+	</body></html>

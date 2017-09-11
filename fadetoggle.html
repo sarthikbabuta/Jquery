@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="j.js"></script>
+<script>
+$(document).ready(function()
+{
+$("button").click(function()
+{
+$("#div1").fadeToggle();
+$("#div2").fadeToggle("slow");
+$("#div3").fadeToggle(1000);
+});
+});
+</script>
+</head>
+<body>
+<button>click</button>
+<div id="div1" style="height:80px;width:20px;display:none;background-color:red"></div>
+<div id="div2"  style="height:80px;width:20px;display:none;background-color:yellow"></div>
+<div id="div3"  style="height:80px;width:20px;display:none; background-color:blue"></div>
+</body>
+</html>

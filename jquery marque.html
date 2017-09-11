@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> </title>
+<script src="j.js">
+</script>
+<script src="jquery.marquee.js"></script>
+</script>
+<script>
+$(document).ready(function()
+{
+$(".marquee1").marquee(
+{
+duration: 15000,
+gap: 50,
+delayBeforeStart: 0,
+direction: 'left',
+duplicated: true
+});
+});
+</script>
+<style>
+.marquee1
+{
+background-color:yellow;
+color:red;
+padding:50px;
+}
+</style>
+</head>
+<body>
+<div class="marquee1">Jquery</div>
+</body>
+</html>

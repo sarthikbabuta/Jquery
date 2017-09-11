@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		$("p").click(function(){
+        alert("The paragraph was clicked.");
+		});
+				$("h1").dblclick(function(){
+        alert("The heading was double clicked.");
+		});
+		$("p").mouseenter(function(){
+        $("p").css("background-color", "red");
+    });
+	$("p").mouseleave(function(){
+        $("p").css("background-color", "yellow");
+    });
+	 $("div").mouseup(function(){
+        $(this).after("<p style='color:green;'>Mouse button released.</p>");
+    });
+	$("div").mousedown(function(){
+        $(this).after("<p style='color:purple;'>Mouse button pressed down.</p>");
+    });
+	$("input").focus(function(){
+		$(this).css("background-color","red");
+	});
+$("input").blur(function(){
+		$(this).css("background-color","orange");
+	});
+		});
+	</script>
+</head>
+<body>
+	<p>Click on this paragraph.</p>
+	<h1> Double click on this heading</h1>
+	<div>Press down and release the mouse button over this div element.</div>
+	First Name:<input type="text" name="xuz" value="First Name"/>
+</body>
+</html>

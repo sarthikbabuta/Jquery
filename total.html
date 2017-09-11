@@ -1,0 +1,39 @@
+….<html>
+<head>
+</head>
+<body>
+<script>
+var a,b,c,text,text1,total=0,d;
+function f()
+{
+a=document.getElementById("items");
+b=document.getElementById("price");
+text=a.options[a.selectedIndex].value;
+text1=b.options[b.selectedIndex].value;
+c=document.getElementById("output");
+c.value+=text+" "+text1+"\n";
+total=total+eval(text1);
+}
+function f1()
+{
+d=document.getElementById("output1");
+d.value=total;
+}
+</script>
+<select id="items" size="2">
+<option value="Chips">Chips</option>
+<option value="Burger">Burger</option>
+<option value="Pizza">Pizza</option>
+</select>
+<select id="price" size="2">
+<option value="50">50</option>
+<option value="120">120</option>
+<option value="350">350</option>
+</select>
+<input type="button" value="ok" onclick="f()">
+<input type="button" value="Bill Amount" onclick="f1()">
+<textarea id="output" rows="5"></textarea>
+<textarea id="output1" rows="1"></textarea>
+</body>
+</html>
+ 

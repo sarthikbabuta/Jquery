@@ -1,0 +1,39 @@
+<html>
+<head>
+<script src="j.js"></script>
+<script>
+$(document).ready(function()
+{
+$("#one").click(function()
+{
+$("#two").slideDown(5000);
+});
+$("#stop").click(function()
+{
+$("#two").stop();
+});
+});
+</script>
+<style>
+#one
+{
+ padding:5px;
+border:solid 1px black;
+background-color:red;
+}
+#two
+{
+ padding:50px;
+border:solid 1px black;
+background-color:red;
+display:none;
+}
+</style>
+
+</head>
+<body>
+<button id="stop">stop</button>
+<div id="one">click</div>
+<div id="two">hello</div>
+</body>
+</html>
